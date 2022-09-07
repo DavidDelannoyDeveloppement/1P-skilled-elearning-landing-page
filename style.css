@@ -1,0 +1,526 @@
+/*Preliminary CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-Parisienne :'Parisienne', cursive;
+}
+
+
+/*Body & Container CSS*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+
+
+.container {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 1845px;
+    overflow: hidden ;
+}
+
+
+/*Headband properties CSS*/
+.headband {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headband img{
+    margin-left: 0.79px;
+}
+
+#header {
+    background-color: white;
+    margin-top: 24px;
+    height: 56px;
+    width: 1110px;
+
+}
+
+#footer {
+    background-color: #13183F;
+    margin: 112px 0 18px 0;
+    height: 120px;
+    width: 1440px;
+    padding: 0 165px;
+
+}
+
+
+/*Logo & Button Get Started CSS*/
+#logo {
+    width: 111.17px;
+    height: 27.68px;
+}
+
+
+.button {
+    border: 0;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+
+#header-button{
+    width: 167px;
+    height: 56px;
+    background-color: #13183F;
+    border-radius: 28px;
+    /* margin-top: 24px; */
+}
+#header-button:hover {
+    background-color: #666CA3;
+
+}
+
+
+/*Title-and-image CSS*/
+.title-and-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 1110px;
+}
+
+.title {
+    margin-top: 172px;
+    width: 457px;
+    height: 359px;
+}
+
+h1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    color: #13183F;
+}
+
+.title p {
+    margin-top: 29px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+    width: 445px;
+}
+
+
+#title-button {
+    width: 167px;
+    height: 56px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    margin-top: 40px;
+}
+#title-button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.main-image {
+    background-image: url(./assets/image-hero-desktop.png);
+    width: 991px;
+    height: 936px;
+    margin-right: -450px;
+    margin-top: -225px;
+    z-index: 1;
+}
+
+
+
+/*Cases CSS*/
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    max-width: 1110px;
+    height: 748px;
+    margin-top: 46.21px;
+}
+
+
+h2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #13183F;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+
+#choice-case {
+    width: 350px;
+    height: 322px;
+    margin-top: 56px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+}
+
+
+
+#title-case {
+    width: 350px;
+    height: 322px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 15px;
+    margin-top: 56px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    padding: 64px 32px 138px 32px;
+}
+
+
+.case {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+    margin: 24px 32px;
+}
+
+.case a {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    margin-left: 32px;
+    margin-bottom: 40px;
+}
+.case a:hover {
+    color: #FFA7C3;;
+}
+
+.case img {
+    width: 56px;
+    height: 56px;
+    margin-top: -24px;
+    margin-left: 32px;
+}
+
+
+
+#footer-button{
+    width: 167px;
+    height: 56px;
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    border-radius: 28px;
+}
+
+#footer-button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+
+/*Footer-creator CSS*/
+.attribution { 
+    font-size: 14px; 
+    text-align: center;
+}
+
+.attribution c,a {
+    text-decoration: none; 
+}
+
+.ddd {
+    font-size: 16px; 
+    color: rgb(255, 120, 0);
+    font-family: 'Monotype Corsiva', var(--font-Parisienne);
+}
+
+
+
+
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+
+/*Responsive design 1024px CSS*/
+@media only screen and (max-width: 1520px) {
+    .container {
+        width: 768px;
+        height: 1760px;
+    }
+    
+
+    /*Headband properties CSS*/
+    #header {
+        height: 48px;
+        width: 689px;
+    }
+    
+    #footer {
+        height: 120px;
+        width: 768px;
+        padding: 0 39px;
+        margin: 58px 0 18px 0;
+    }
+    
+
+    /*Logo & Button Get Started CSS*/
+    #logo {
+        width: 86.9px;
+        height: 22px;
+    }
+    
+    .button {
+        font-size: 16px;
+    }
+
+    #header-button{
+        width: 140px;
+        height: 48px;
+    }
+ 
+    
+    /*Title-and-image CSS*/
+    .title-and-image {
+        width: 689px;
+    }
+    
+    .title {
+        margin-top: 99px;
+        width: 398px;
+        height: 284px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .title p {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 26px;
+        width: 398px;
+    }
+    
+    #title-button {
+        margin-top: 24px;
+    }
+
+    .main-image {
+        background-image: url(./assets/image-hero-tablet.png);
+        width: 640.71px;
+        height: 640px;
+        margin-right: -60px;
+        margin-left: -68px;
+        margin-top: -165px;
+    }
+    
+    
+    /*Cases CSS*/
+    .middle-section {
+        max-width: 689px;
+        height: 913px;
+        margin-top: 93px;
+    }
+    
+    
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+        color: #13183F;
+        margin-top: 24px;
+        margin-left: 32px;
+    }
+    
+    
+    #choice-case {
+        width: 340px;
+        height: 259px;
+        border-radius: 10px;
+        margin-top: 32px;
+    }
+    
+    
+    #title-case {
+        width: 340px;
+        height: 259px;
+        border-radius: 10px;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 56px 21px 139px 32px;
+        margin-top: 40px;
+    }
+    
+    
+    .case {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .case p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 16px 22px 24px 32px;
+    }
+    
+    .case a {
+        margin-bottom: 32px;
+    }
+
+    
+    #footer-button{
+        width: 140px;
+        height: 48px;
+    }
+
+
+    .ddd {
+        font-size: 12px; 
+        color: rgb(255, 120, 0);
+        font-family: var(--font-Parisienne);
+        font-weight: bold;
+    }
+
+}
+
+
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+/*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+/*Responsive design 768px CSS*/
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 375px;
+        height: 2680px;
+    }
+    
+    
+    /*Headband properties CSS*/
+    #header {
+        height: 48px;
+        width: 343px;
+    }
+    
+    #footer {
+        height: 120px;
+        width: 375px;
+        padding: 0 16px;
+        margin: 80px 0 18px 0;
+    }
+    
+
+    /*Title-and-image CSS*/
+    .title-and-image {
+        flex-direction: column;
+        width: 343px;
+    }
+    
+    .title {
+        margin-top: 38px;
+        width: 343px;
+        height: 285px;
+    }
+
+    .title p {
+        width: 343px;
+    }
+
+    .main-image {
+        background-image: url(./assets/image-hero-mobile.png);
+        height: 350px;
+        width: 390px;
+        margin: 20px 0px 0 -40px;
+    }
+    
+    
+    
+    /*Cases CSS*/
+    .middle-section {
+        max-width: 343px;
+        height: 1695px;
+        margin-top: 0px;
+    }
+    
+    
+    h2 {
+        margin-left: 28px;
+    }
+    
+    
+    #choice-case {
+        width: 340px;
+        height: 259px;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    
+    
+    #title-case {
+        width: 343px;
+        height: 120px;
+        padding: 24px 29px 32px 28px;
+        margin-top: 40px;
+    }
+
+    
+    .case p {
+        margin: 16px 20px 24px 28px;
+    }
+
+
+    .ddd {
+        font-size: 12px; 
+        color: rgb(255, 120, 0);
+        font-family: var(--font-Parisienne);
+        font-weight: bold;
+    }
+
+}
+
+
