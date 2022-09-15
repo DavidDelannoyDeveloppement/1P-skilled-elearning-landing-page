@@ -40,23 +40,20 @@ body {
 /*Headband properties CSS*/
 .headband {
     display: flex;
+    z-index: 2;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    margin-top: 24px;
+    height: 56px;
+    width: 1110px;
 }
-
 
 .headband img{
     margin-left: 0.79px;
 }
 
-#header {
-    background-color: white;
-    margin-top: 24px;
-    height: 56px;
-    width: 1110px;
-
-}
 
 #footer {
     background-color: #13183F;
@@ -64,18 +61,17 @@ body {
     height: 120px;
     width: 1440px;
     padding: 0 165px;
-
 }
 
 
 /*Logo & Button Get Started CSS*/
-#logo {
+.logo {
     width: 111.17px;
     height: 27.68px;
 }
 
 
-.button {
+.header-button {
     border: 0;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
@@ -84,22 +80,57 @@ body {
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
-}
-.button:hover {
-    cursor: pointer;
-}
-
-
-#header-button{
     width: 167px;
     height: 56px;
     background-color: #13183F;
     border-radius: 28px;
-    /* margin-top: 24px; */
 }
-#header-button:hover {
+.header-button:hover {
+    cursor: pointer;
     background-color: #666CA3;
+}
 
+.a-def {
+    color: #FFFFFF;
+}
+
+.title-button {
+    border: 0;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 167px;
+    height: 56px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    margin-top: 40px;
+}
+.title-button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.footer-button {
+    border: 0;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 167px;
+    height: 56px;
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    border-radius: 28px;
+}
+.footer-button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
 
@@ -139,17 +170,6 @@ h1 {
 }
 
 
-#title-button {
-    width: 167px;
-    height: 56px;
-    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-    border-radius: 31.5px;
-    margin-top: 40px;
-}
-#title-button:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-}
-
 .main-image {
     background-image: url(./assets/image-hero-desktop.png);
     width: 991px;
@@ -186,7 +206,14 @@ h2 {
 }
 
 
-#choice-case {
+
+
+
+
+.case {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 350px;
     height: 322px;
     margin-top: 56px;
@@ -194,8 +221,6 @@ h2 {
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
     border-radius: 15px;
 }
-
-
 
 #title-case {
     width: 350px;
@@ -210,13 +235,6 @@ h2 {
     line-height: 40px;
     color: #FFFFFF;
     padding: 64px 32px 138px 32px;
-}
-
-
-.case {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .case p {
@@ -252,18 +270,6 @@ h2 {
 
 
 
-#footer-button{
-    width: 167px;
-    height: 56px;
-    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-    border-radius: 28px;
-}
-
-#footer-button:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-}
-
-
 /*Footer-creator CSS*/
 .attribution { 
     font-size: 14px; 
@@ -282,7 +288,6 @@ h2 {
 
 
 
-
 /*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
 /*§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
 
@@ -295,11 +300,11 @@ h2 {
     
 
     /*Headband properties CSS*/
-    #header {
+    .headband {
         height: 48px;
         width: 689px;
     }
-    
+
     #footer {
         height: 120px;
         width: 768px;
@@ -309,21 +314,29 @@ h2 {
     
 
     /*Logo & Button Get Started CSS*/
-    #logo {
+    .logo {
         width: 86.9px;
         height: 22px;
     }
     
-    .button {
+    .header-button{
         font-size: 16px;
-    }
-
-    #header-button{
         width: 140px;
         height: 48px;
     }
- 
-    
+
+    .title-button{
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    footer.button {
+        font-size: 16px;
+        width: 140px;
+        height: 48px;
+    }
+
+
     /*Title-and-image CSS*/
     .title-and-image {
         width: 689px;
@@ -347,9 +360,6 @@ h2 {
         width: 398px;
     }
     
-    #title-button {
-        margin-top: 24px;
-    }
 
     .main-image {
         background-image: url(./assets/image-hero-tablet.png);
@@ -368,7 +378,6 @@ h2 {
         margin-top: 93px;
     }
     
-    
     h2 {
         font-size: 20px;
         line-height: 25px;
@@ -377,14 +386,12 @@ h2 {
         margin-left: 32px;
     }
     
-    
-    #choice-case {
+    .case {
         width: 340px;
         height: 259px;
         border-radius: 10px;
         margin-top: 32px;
     }
-    
     
     #title-case {
         width: 340px;
@@ -395,7 +402,6 @@ h2 {
         padding: 56px 21px 139px 32px;
         margin-top: 40px;
     }
-    
     
     .case {
         display: flex;
@@ -411,12 +417,6 @@ h2 {
     
     .case a {
         margin-bottom: 32px;
-    }
-
-    
-    #footer-button{
-        width: 140px;
-        height: 48px;
     }
 
 
@@ -442,10 +442,11 @@ h2 {
     
     
     /*Headband properties CSS*/
-    #header {
+    .headband {
         height: 48px;
         width: 343px;
     }
+    
     
     #footer {
         height: 120px;
@@ -487,13 +488,13 @@ h2 {
         margin-top: 0px;
     }
     
-    
+
     h2 {
         margin-left: 28px;
     }
     
     
-    #choice-case {
+    .case {
         width: 340px;
         height: 259px;
         border-radius: 10px;
