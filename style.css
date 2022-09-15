@@ -90,9 +90,6 @@ body {
     background-color: #666CA3;
 }
 
-.a-def {
-    color: #FFFFFF;
-}
 
 .title-button {
     border: 0;
@@ -243,7 +240,8 @@ h2 {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    color: #83869A;
+    color: #575866a9;
+    /* color: #83869A; */
     margin: 24px 32px;
 }
 
